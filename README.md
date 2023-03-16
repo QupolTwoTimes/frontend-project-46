@@ -3,7 +3,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a8d6ee366154c48f5fab/maintainability)](https://codeclimate.com/github/QupolTwoTimes/frontend-project-46/maintainability)
 
-[![Test_gendiff](https://github.com/QupolTwoTimes/frontend-project-46/actions/workflows/main.yml/badge.svg)](https://github.com/QupolTwoTimes/frontend-project-46/actions/workflows/main.yml)
+[![Test_gendiff](https://github.com/QupolTwoTimes/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/QupolTwoTimes/frontend-project-46/actions/workflows/main.yml)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a8d6ee366154c48f5fab/test_coverage)](https://codeclimate.com/github/QupolTwoTimes/frontend-project-46/test_coverage)
 
