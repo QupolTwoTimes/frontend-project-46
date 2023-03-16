@@ -1,10 +1,11 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/QupolTwoTimes/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/QupolTwoTimes/frontend-project-46/actions)
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/a8d6ee366154c48f5fab/maintainability)](https://codeclimate.com/github/QupolTwoTimes/frontend-project-46/maintainability)
-[![Test_gendiff]
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/daac37fde749955f4c93/test_coverage)](https://codeclimate.com/github/QupolTwoTimes/frontend-project-46)
+[![Test_gendiff](https://github.com/QupolTwoTimes/frontend-project-46/actions/workflows/main.yml/badge.svg)](https://github.com/QupolTwoTimes/frontend-project-46/actions/workflows/main.yml)
 
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a8d6ee366154c48f5fab/test_coverage)](https://codeclimate.com/github/QupolTwoTimes/frontend-project-46/test_coverage)
 
 
 
