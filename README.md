@@ -10,7 +10,7 @@
 ## Welcome to my new project ;)
 * ### About the project
 
-* #### Video with worc proccess
+* #### Video with work proccess
     [![start ](https://asciinema.org/a/563490.svg)](https://asciinema.org/a/563490)
 
    
