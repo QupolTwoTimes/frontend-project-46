@@ -2,6 +2,7 @@ import { expect, test } from '@jest/globals';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
+import * as yaml from 'js-yaml';
 import genDiff from '../src/getDiff';
 
 const filename = fileURLToPath(import.meta.url);
@@ -10,6 +11,10 @@ const readFile = (nameOfFile) => readFileSync(resolve(dirName, '..', '__fixtures
 
 test('genDiff', () => {
   expect(genDiff(JSON.parse(readFile('file1.json')), JSON.parse(readFile('file2.json')))).toEqual(readFile('jsonTest.txt'));
+});
+
+test('genDiff', () => {
+  expect(genDiff(yaml.load(readFile('file1.yml')), yaml.load(readFile('file2.yaml')))).toEqual(readFile('jsonTest.txt'));
 });
 
 // gendiff ./__fixtures__/file1.json ./__fixtures__/file2.json
