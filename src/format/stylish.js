@@ -16,4 +16,28 @@ const stringfy = (value, depth = 1) => {
   return iter(value, depth);
 };
 
-export default stringfy;
+const getStylishFormat = (diffTree) => {
+  const iter = (diffObj, depth = 1) => {
+    const iterIndent = getCurrentIndent(depth);
+    const closingIndent = getClosingIndent(depth);
+
+    const result = diffObj.flatMap((user) => {
+      switch (user.status) {
+        case 'nested':
+          return `${iterIndent}  ${user.key} ${iter(user.children, depth + 1)}`;
+        case 'deleted':
+          return `${iterIndent}- ${user.key} ${stringfy(user.value, depth + 1)}`;
+        case 'added':
+          return `${iterIndent}+ ${user.key} ${stringfy(user.value, depth + 1)}`;
+        case 'changed':
+          return `${iterIndent}- ${user.key} ${stringfy(user.value, depth + 1)}`;
+        default: return `${iterIndent}  ${user.key} ${user.value}`;
+      }
+    });
+    return ['{', ...result, `${closingIndent}}`].join('\n');
+  };
+
+  return iter(diffTree);
+};
+
+export default getStylishFormat;
