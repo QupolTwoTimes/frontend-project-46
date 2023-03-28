@@ -5,7 +5,6 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a8d6ee366154c48f5fab/test_coverage)](https://codeclimate.com/github/QupolTwoTimes/frontend-project-46/test_coverage)
 
 
-
 # Hello, Dear Users 
 ## Welcome to my new project
 * ### About the project
@@ -15,3 +14,6 @@
 
 * #### Video with work proccess2
     [![start ](https://asciinema.org/a/568150.svg)](https://asciinema.org/a/568150)
+
+* #### Video with work proccess3
+    [![start ](https://asciinema.org/a/571384.svg)](https://asciinema.org/a/571384)
