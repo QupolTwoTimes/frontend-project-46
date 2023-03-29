@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { cwd } from 'process';
 import getDiffTree from './getDiff.js';
 import getParse from './parser.js';
-import getStylishFormat from './format/stylish.js';
+import getFormat from './formatters/index.js';
 
 function getExtension(pathOfFile) {
   return pathOfFile.split('.').reverse()[0];
@@ -20,5 +20,5 @@ export default (filepath1, filepath2, format = 'stylish') => {
   const firstObject = getParse(fileContent1, dataFormat1);
   const secondObject = getParse(fileContent2, dataFormat2);
   const tmp = getDiffTree(firstObject, secondObject);
-  return getStylishFormat(tmp, format);
+  return getFormat(tmp, format);
 };
