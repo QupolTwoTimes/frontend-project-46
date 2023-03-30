@@ -12,7 +12,9 @@ const getDiffTree = (data1, data2) => {
       if (data1[key] === data2[key]) {
         return { status: 'unchanged', key, value: data1[key] };
       }
-      return { status: 'changed', key, value: data2[key] };
+      return {
+        status: 'changed', key, value1: data1[key], value2: data2[key],
+      };
     } if (_.has(data1, key) && !(_.has(data2, key))) {
       return { status: 'deleted', key, value: data1[key] };
     }
