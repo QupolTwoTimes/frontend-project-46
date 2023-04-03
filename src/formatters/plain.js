@@ -15,13 +15,13 @@ const getPlainFormat = (tree) => {
       const currentPath = `${path}${child.key}`;
       switch (child.status) {
         case 'nested':
-          return iter(child.children, `${currentPath}`);
+          return iter(child.children, `${currentPath}.`);
         case 'added':
-          return `Property ${currentPath} was added with value: ${getValue(child.value)}`;
+          return `Property '${currentPath}' was added with value: ${getValue(child.value)}`;
         case 'changed':
-          return `Property ${currentPath} was updated. From ${getValue(child.value1)} to ${getValue(child.value2)}`;
+          return `Property '${currentPath}' was updated. From ${getValue(child.value1)} to ${getValue(child.value2)}`;
         default:
-          return `Property ${currentPath} was removed`;
+          return `Property '${currentPath}' was removed`;
       }
     });
     return mapTree.join('\n');
