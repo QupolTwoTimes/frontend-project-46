@@ -6,7 +6,9 @@ import getParse from './parser.js';
 import getFormat from './formatters/index.js';
 
 function getExtension(pathOfFile) {
-  return pathOfFile.split('.').reverse()[0];
+  const components = pathOfFile.split('.');
+  const dataFormat = components.at(-1);
+  return dataFormat.toUpperCase();
 }
 
 const getFileContent = (pathOfFile) => readFileSync(resolve(cwd(), pathOfFile), 'utf-8');
