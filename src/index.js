@@ -8,7 +8,7 @@ import getFormat from './formatters/index.js';
 function getExtension(pathOfFile) {
   const components = pathOfFile.split('.');
   const dataFormat = components.at(-1);
-  return dataFormat.toUpperCase();
+  return dataFormat;
 }
 
 const getFileContent = (pathOfFile) => readFileSync(resolve(cwd(), pathOfFile), 'utf-8');
@@ -21,6 +21,6 @@ export default (filepath1, filepath2, format = 'stylish') => {
 
   const firstObject = getParse(fileContent1, dataFormat1);
   const secondObject = getParse(fileContent2, dataFormat2);
-  const tmp = getDiffTree(firstObject, secondObject);
-  return getFormat(tmp, format);
+  const astTree = getDiffTree(firstObject, secondObject);
+  return getFormat(astTree, format);
 };

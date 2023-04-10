@@ -9,6 +9,30 @@
 ## Welcome to my new project
 * ### About the project
 
+
+### Install ###
+
+1. Clone repository local
+`git clone git@github.com:SmwOverRainbow/frontend-project-46.git`
+2. Install all dependencies 
+`npm ci`
+3. Install  apps global
+`npm link`
+4. Run app with command:
+`gendiff <filepath1>filename1.json <filepath2>filename2.yaml`
+
+    where `<filepath>` - absolute or relative file path
+
+### Description ### 
+
+Gendiff - is a utility that determines the difference between two data structures. Utility can work with json and yaml/yml files. By default using 'stylish' output format of difference. For another output format, use the flag `-f` or `--format` with next values:
+
+`stylish` - using by default
+
+`plain` - for line-by-line output of the difference
+
+`json`  - for json output of the difference
+
 * #### Video with work process
     [![start](https://asciinema.org/a/563490.svg)](https://asciinema.org/a/563490)
 

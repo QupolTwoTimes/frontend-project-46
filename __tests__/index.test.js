@@ -9,6 +9,8 @@ const dirName = dirname(filename);
 const readFile = (nameOfFile) => readFileSync(resolve(dirName, '..', '__fixtures__', nameOfFile), 'utf-8');
 
 const cases = [
+  ['__fixtures__/file1.json', '__fixtures__/file2.json', readFile('stylishTest.txt')],
+  ['__fixtures__/file1.yml', '__fixtures__/file2.yaml', readFile('stylishTest.txt')],
   ['__fixtures__/file1.json', '__fixtures__/file2.json', readFile('stylishTest.txt'), 'stylish'],
   ['__fixtures__/file1.yml', '__fixtures__/file2.yaml', readFile('stylishTest.txt'), 'stylish'],
   ['__fixtures__/file1.json', '__fixtures__/file2.json', readFile('plainTest.txt'), 'plain'],

@@ -5,7 +5,7 @@
     "gendiff": "bin/gendiff.js"
   },
   "type": "module",
-  "description": "[![Actions Status](https://github.com/QupolTwoTimes/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/QupolTwoTimes/frontend-project-46/actions)",
+  "description": "This project is a utility that determines the difference between two data structures (https://github.com/QupolTwoTimes/frontend-project-46/actions)",
   "main": "./src/index.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
